@@ -107,8 +107,8 @@ const company = {
   
 
 
-  printCompanyInfo(company, 'Клієнт 1.3'); // Інформація про Клієнт 1
-  printCompanyInfo(company, 'Клієнт 1.2'); // Інформація про Клієнт 1.2
-  printCompanyInfo(company, 'Клієнт 1.3.3'); // Інформація про Клієнт 1.3.3
-  printCompanyInfo(company, 'Клієнт 2'); // Інформація про Клієнт 2
-  printCompanyInfo(company, 'Клієнт 3'); // Компанію з назвою 'Клієнт 3' не знайдено.
+  printCompanyInfo(company, 'Клієнт 1'); 
+  printCompanyInfo(company, 'Клієнт 1.2'); 
+  printCompanyInfo(company, 'Клієнт 1.3.3'); 
+  printCompanyInfo(company, 'Клієнт 2'); 
+  printCompanyInfo(company, 'Клієнт 3'); 
