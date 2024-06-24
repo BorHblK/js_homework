@@ -16,15 +16,16 @@ function pad (initialString, symbol, count, endOf) {
         return;
     }
     // Створюємо рядок з 'count' повторень 'symbol'
-    const padding = symbol.repeat(count);  
+    const requiredPaddingLength = Math.max(0, count - initialString.length);
+    const padding = symbol.repeat(requiredPaddingLength);
 
     if (endOf) {
         // Додаємо символи в кінець рядка, якщо endOf == true
-        return initialString + padding;
+        return padding + initialString;
     } else {
         // Додаємо символи в початок рядка, якщо endOf == false
-        return padding + initialString;
+        return initialString + padding;
     }
 }
 
-console.log(pad ('test', '^', 50, false));
+console.log(pad ('test', '^', 6, true));
